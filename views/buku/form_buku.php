@@ -1,28 +1,31 @@
 <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">tambah anggota</h3>
+                <h3 class="card-title">tambah buku</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="ad_anggota.php?proses=insert" method="POST">
+              
+              <form action="db/db_buku.php?proses=insert" method="POST">
                 <div class="card-body">
                   <div class="form-group">
                     <label for="nama">nama</label>
-                    <input type="text" class="form-control" id="nama" name= "nama" placeholder="nama anda"required>
+                    <input type="text" class="form-control" id="nama" name= "nama" 
+                    placeholder="nama anda"required>
                     <div class="col mb-3">
                   </div>
-                  <div class="card-body">
                   <div class="form-group">
-                    <label for="alamat">alamat</label>
-                    <input type="text" class="form-control" id="alamat" placeholder="alamat anda"required>
+                    <label for="username">username</label>
+                    <input type="text" class="form-control" id="username" name= "username"
+                     placeholder="username anda"required>
                   </div>
                   <div class="form-group">
-                    <label for="telepon">telepon</label>
-                    <input type="text" class="form-control" id="telepon" placeholder="telepon anda"required>
+                    <label for="password">password</label>
+                    <input type="text" class="form-control" id="password" name= "password" 
+                    placeholder="password anda"required>
                   </div>
                   <div class="form-group">
                         <label>select</label>
-                        <select class="form-control">
+                        <select class="form-control" name="level">
                           <option value="admin">admin</option>
                           <option value="user">user</option>
                         </select>
@@ -39,11 +42,11 @@
                       </div>
                     </div>
                   </div> -->
-                  
+                  </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-warning float-right">simpan</button>
-                  <button type="reset" class="btn btn-primary float-right">reset</button>
+                  <button type="submit" class="btn btn-warning float-right ml-3"><i class="fa fa-save"></i> simpan</button>
+                  <button type="reset" class="btn btn-primary float-right ml-3"><i class="fa fa-retweet"></i> reset</button>
                 </div>
               </form>
             </div>
